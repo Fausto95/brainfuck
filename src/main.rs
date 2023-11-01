@@ -4,7 +4,8 @@ mod compiler;
 mod interpreter;
 
 fn main() {
-    let input = "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.";
+    let source = "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.";
+    let output = compiler::compiler(source);
 
-    println!("Output: {:?}", compiler::compiler(input));
+    println!("Output: {:?}", output);
 }

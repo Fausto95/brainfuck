@@ -10,7 +10,7 @@ pub fn compiler(input: &str) -> String {
 
     let mut data = [0u8; 30000];
     let mut ptr = 0usize;
-    let mut input_chars: Vec<char> = "Brainfuck Input:".chars().collect(); // Placeholder input, replace as necessary
+    let mut input_chars: Vec<char> = "Brainfuck Input:".chars().collect();
     let mut output = Vec::new();
 
     interpreter(&ast, &mut data, &mut ptr, &mut input_chars, &mut output);
